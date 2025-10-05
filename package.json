@@ -1,0 +1,20 @@
+{
+  "name": "project_management",
+  "version": "1.0.0",
+  "description": "A project Management application for beginners",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "keywords": [
+    "backend",
+    "API",
+    "creation"
+  ],
+  "author": "Manoj Khanavalkar",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "3.6.2"
+  }
+}
