@@ -25,11 +25,11 @@ const router = Router();
 // unsecurd routs
 router.route("/register").post(userRegisterValidator(), validate, registerUser);
 router.route("/login").post(userLoginValidator(), validate, login);
-router.route("/verify-email:verificationToken").get(verifyEmail);
+router.route("/verify-email/:verificationToken").get(verifyEmail);
 router.route("/refresh-token").post(refreshAccessToken);
 router.route("/forgot-password").post(userForgotPasswordValidator(),validate,forgotPasswordRequest);
 router
-    .route("/reset-password:resetToken")
+    .route("/reset-password/:resetToken")
     .post(userResetForgotPasswordValidator(),resetForgotPassword)
 // secure routs
 router.route("/logout").post(verifyJWT, logoutUser);
